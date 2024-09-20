@@ -15,7 +15,6 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem "tailwindcss-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
@@ -59,3 +58,7 @@ group :test do
 end
 
 gem "devise", "~> 4.9"
+
+gem "dartsass-rails", "~> 0.5.1"
+
+gem "bootstrap", "~> 5.3"
