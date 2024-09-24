@@ -16,8 +16,22 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
 
-  <body class="w-full h-full p-0 m-0">
+  <body class="d-flex flex-column w-100 h-100 p-0 m-0">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Início</a>
+        <a class="navbar-brand" href="#">Teste</a>
+        <a class="navbar-brand" href="#">Teste</a>
+        <a class="navbar-brand" href="#">Teste</a>
+      </div>
+    </nav>
     <%= yield %>
   </body>
+
 </html>

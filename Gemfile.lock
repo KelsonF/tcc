@@ -116,6 +116,8 @@ GEM
     drb (2.2.1)
     erubi (1.13.0)
     execjs (2.9.1)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (4.28.1)
@@ -375,6 +377,7 @@ DEPENDENCIES
   dartsass-rails (~> 0.5.1)
   debug
   devise (~> 4.9)
+  faker (~> 3.4)
   importmap-rails
   jbuilder
   propshaft
@@ -389,4 +392,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   2.5.18
+   2.5.19

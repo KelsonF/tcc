@@ -1,18 +1,20 @@
 class StoresController < ApplicationController
   before_action :set_stores, only: [ :show, :edit, :update, :destroy ]
 
+  # The customer will use this endpoint to access all the stores
   def index
     @stores = Store.all
   end
 
   def show;end
 
+  # The seller will use this endpoint to create a new store
   def new
-    @store = Store.new
+    @store = current_user.store.new
   end
 
   def create
-    @store = Store.new(store_params)
+    @store = current_user.store.new(store_params)
 
     if @store.save
       redirect_to @stores, notice: "Loja criada com sucesso"

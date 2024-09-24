@@ -62,3 +62,5 @@ gem "devise", "~> 4.9"
 gem "dartsass-rails", "~> 0.5.1"
 
 gem "bootstrap", "~> 5.3"
+
+gem "faker", "~> 3.4"
